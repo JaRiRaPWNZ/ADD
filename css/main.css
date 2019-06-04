@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/***********HEAD*****************/
+.header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    /*background: black;
+    z-index: 100;*/
+    
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+   
+}
+
+.logo{
+    background: url(../images/mortar122.png) center no-repeat; /* Путь к файлу с исходным рисунком  */
+    width: 80px; /* Ширина рисунка */
+    height: 80px; /*  Высота рисунка */
+    transition: color .2s linear;
+    padding-right: 125px;
+    
+}
+.logo:hover{
+    background: url(../images/mortaryel.png) center no-repeat; /* Путь к файлу с исходным рисунком  */
+    width: 80px; /* Ширина рисунка */
+    height: 80px; /*  Высота рисунка */
+    
+}
+.subline{
+    border-bottom: 4px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/*NAVIGATION*/
+#nav{
+    text-transform: uppercase;
+    padding: 5px;
+    
+    /*border-bottom: 4px solid #fff;*/
+}
+
+#nav__link {
+
+    padding: 5px 15px; /* задаем внутренние отступы */
+
+    color: #fff; /* цвет текста */
+
+    text-decoration: none; /* убрать нижнее подчёркивание у ссылок */
+
+    font-family: Comic Sans MS, Comic Sans, monospace;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    transition: color .2s linear;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    margin: 0 10px;
+}
+#nav__link:hover {
+
+    color: #e6b917;
+}
+
+/********CONTAINER********/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*left: 19%;*/
+    
+}
+/*INTRO*/
+.intro{
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;*/
+    background: url(../images/grass2.jpg) round;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 130vh;
+    
+}
+/***********************************************************/
+/***********************CONTENT**********************/
+.container2{
+    position: absolute;
+    top: 18%;
+    left: 19%;
+    width: 100%;
+    max-width: 1200px;
+    /*background: rgb(27, 226, 103);
+    background: #fff;*/
+    background-color:rgba(197, 240, 184, 0.4);
+    border-radius: 10px;
+    display: inline-flex;
+    
+}
+
+.catalog{
+    width: 15%;
+    /*opacity: 0.4;*/
+    
+    border-right: 4px solid #fff;
+    border-radius: 15px;
+}
+.catalog__list{
+    position: sticky;
+    top: 7em;
+    min-height: 2em;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+#catalog__link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color .2s linear;
+}
+#catalog__link:hover{
+    color: #e6b917;
+}
+
+/****************PRODUCTs***********/
+.product{
+    width: 85%;
+    margin-right: 10px;
+    
+    /*max-height: 550px;*/
+    
+}
+.product__position{
+    padding-left: 1em;
+    /*display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; */
+   
+    
+}
+img{
+    padding: 5px;
+}
+.product__image{
+    /*margin-top: 1em;
+    margin-bottom: 1em;*/
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+    padding-top: 5px;
+}
+/************FOOTER**************/
+.footer{
+    position: absolute;
+    top: 85%;
+    left: 19%;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    background: #e6b917;
+}
